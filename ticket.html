@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png" />
+
+   
+                <link rel="stylesheet" href="style.css" type="text/CSS" />
+</head>
+<body class="container">
+    <header>
+        <img src="./assets/images/logo-full.svg" alt="Coding Conf logo" />
+  
+        <h1>
+          Congrats,
+          <span id="fullname" class="attendant--name"></span>! Your
+          ticket is ready.
+        </h1>
+        <img src="#" id='ticket-avatar' />
+        <p class="details">
+          We've emailed your ticket to
+          <span class="email" id="attendant--email"></span>
+          and will send updates in the run up to the event.
+        </p>
+
+      </header>
+      <script> // Retrieve data from local storage 
+      const name = localStorage.getItem('name'); 
+      const email = localStorage.getItem('email'); 
+      const avatarURL = localStorage.getItem('avatarURL'); 
+      // Set the ticket details 
+      document.getElementById('fullname').textContent = name; 
+     
+       document.getElementById('attendant--email').textContent = email; 
+       if (avatarURL) 
+       { const ticketAvatar = document.getElementById('ticket-avatar'); 
+      ticketAvatar.src = avatarURL; 
+      ticketAvatar.style.display = 'block';
+      ticketAvatar.style.maxWidth = '300px'; // Set the maximum width 
+      ticketAvatar.style.height = 'auto' 
+      } 
+      </script>
+      
+      <script src="ticket.js"></script>
+</body>
+</html>

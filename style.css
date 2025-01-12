@@ -1,0 +1,89 @@
+form 
+{
+     background-color: #f2f2f2; /* Light grey background */ 
+   
+ }
+ body {
+    background-image: url('./assets/images/background-desktop.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image in the viewport */
+    display: grid; /* Use Flexbox for centering */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 30vh; /* Full height of the viewport */
+    margin: 0; /* Removes default margin */
+    flex-direction: column;
+    padding: 0; /* Adds padding inside the body */
+    font-family: Arial, sans-serif; /* Sets a default font for the body */
+    color: white;
+  }
+  .container {
+    background-image: url('./assets/images/background-desktop.png');
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    max-width: 500px; /* Optional: Limits the width of the container */
+    width: 100%; /* Ensures the container takes full width up to max-width */
+  }
+  
+  #logo
+  {
+    display: grid;
+   align-content: center;
+  }
+  /* Style for the larger input box */
+  input[type="text"], input[type="email"]
+  { 
+    padding: 10px; border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 1em;
+    width: 100%; /* Full width of the parent element */ 
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+ }
+
+ .avatar--input {
+    width: 100%; /* Full width of the parent element */
+    max-width: 500px; /* Maximum width */
+    height: 40px; /* Height of the input box */
+    padding: 10px; /* Padding inside the input box */
+    font-size: 1em; /* Font size */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  .upload-box
+   {
+     border: 2px dashed #31294f; 
+     padding: 20px; 
+     border-radius: 10px; 
+    background-color: rgba(43, 39, 66, 0.8); /* White background with transparency */ 
+   } 
+    
+   
+      .icon-small 
+      { 
+        width: 50px; /* Desired width */ 
+        height: 50px; /* Desired height */ 
+        margin-bottom: 10px;
+        justify-content: center;
+
+
+     }
+     button
+    { 
+        background-color: #007BFF; /* Blue background */ 
+        justify-content: center;
+        color: white; padding: 10px 20px;
+         border: none; border-radius: 5px; 
+         cursor: pointer; 
+         font-size: 1em;
+    } 
+     button:hover {
+
+         background-color: #0056b3; /* Darker blue on hover */ 
+        }
+  
+ /* Target the element you want to add a background image to */
+
+  
